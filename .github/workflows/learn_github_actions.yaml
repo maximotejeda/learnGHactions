@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v3
       - run: ls
       - run: chmod +x ./init.sh
-      - run: ./iniit.sh -v
+      - run: ./init.sh -v
       - run: ./init.sh -h
       - run: ./init.sh -q
       - run: ./init.sh --version 
