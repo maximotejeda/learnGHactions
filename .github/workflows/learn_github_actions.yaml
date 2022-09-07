@@ -4,6 +4,7 @@ jobs:
   check-bats-version: 
     runs-on: ubuntu-latest
     steps:
+      - run: chmod +x ./init.sh
       - run: ./iniit.sh -v
       - run: ./init.sh -h
       - run: ./init.sh -q
