@@ -1,0 +1,10 @@
+name: learn_github_actions
+on: [push]
+jobs:
+  check-bats-version: 
+    rund-on: ubuntu-latest
+    steps:
+      - run: ./iniit.sh -v
+      - run: ./init.sh -h
+      - run: ./init.sh -q
+      - run: ./init.sh --version 
