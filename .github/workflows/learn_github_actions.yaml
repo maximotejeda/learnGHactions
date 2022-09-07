@@ -11,3 +11,8 @@ jobs:
       - run: ./init.sh -h
       - run: ./init.sh -q
       - run: ./init.sh --version 
+      - uses: actions/setup-go@v2
+        with:
+          go-version: '1.18.0'
+      - run: go test
+      
